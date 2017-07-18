@@ -7,17 +7,23 @@
       <style>
 p {
     border: 1px solid mistyrose;
-    margin: 50px;
+    margin: 500px;
 }
 </style>
      
       <body style="background-color:mistyrose;">
       <h1 style="font-family:verdana; text-align:center;"><b>About Me</h1></b>
+        
+        <button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Show the date and time.</button>
+<p id="demo"></p>
+        
       <img src="https://s-media-cache-ak0.pinimg.com/736x/2b/9d/6f/2b9d6f72a04be29f36206da2ef2ebdf1--owl-babies-baby-owls.jpg" alt="Baby Owl" style="width:128px;height:128px;">
         
         <p id="qone">Who are you?</p>
 
-<button type="button" onclick='document.getElementById("qone").innerHTML = "I am Hope Tsai, a rising junior hailing from the mitten state of Michigan."'>Click Me!</button></p>
+<button type="button" onclick='document.getElementById("qone").innerHTML = "I am Hope Tsai, a rising junior hailing from the mitten state of Michigan."'>Click me!</button></p>
       
      <p id="qtwo">What high school do you go to?</p>
       
@@ -52,4 +58,12 @@ p {
   <p><b>Drawing Shapes in Python and Scratch:</b> This code was designed to take in an input (the number of sides for the computer to draw) and draw a shape based on the input, which would be the output. This was easier to do in Scratch than in Python; in Scratch, all the code available was there in the program, and all I had to do was drag and drop the correct block of code into the workspace. It was logical and pretty straightforward. In Python, I had to type up the entire code, and all I had were a few lines of code that I had to string together.</p>
   <p><b>Paddleball:</b> The paddleball game consists of two people playing on the computer using the right and left arrow keys and the A and D arrow keys; the goal is to keep the ball bouncing on the platform. It took a long time to get the ball to bounce off the platform and the walls; the easier part was designing the score variable. If I had had more time, I would've wanted to focus on the physics of the ball, so that it would look more realistic.</p>
   <p><b>Robots:</b> Switching from Scratch and Python to robots and Arduino was a big change; suddenly, we had to learn all of the hardware in a robot in addition to a new programming language. Wiring the robot took some time getting used to, and sometimes the robot wouldn't work because of the wiring, and not because of the code. Sometimes, a piece would blow out (like an LED) and we wouldn't be able to use it, but we would spend a long time laboring over the code and the wiring before deciding to try switching out the LED. More frustration equals more excitement when it works, though, and in the end, it was like the robot was a lil' baby.</p>   
+
+<button onclick="alertFunction()">Click here!</button>
+
+<script>
+function alertFunction() {
+    alert("Thanks for visiting my page!");
+}
+</script>
       </html>
